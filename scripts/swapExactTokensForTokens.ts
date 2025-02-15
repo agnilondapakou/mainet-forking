@@ -15,8 +15,8 @@ const main = async () => {
     await helpers.impersonateAccount(theAddressIFoundWithUSDCAndDAI);
     const impersonatedSigner = await ethers.getSigner(theAddressIFoundWithUSDCAndDAI);
 
-    let usdcContract = await ethers.getContractAt('OurIERC20', USDCAddress);
-    let daiContract = await ethers.getContractAt('OurIERC20', DAIAddress);
+    let usdcContract = await ethers.getContractAt('IERC20', USDCAddress);
+    let daiContract = await ethers.getContractAt('IERC20', DAIAddress);
     let uniswapContract = await ethers.getContractAt('IUniswapV2Router02', UNIRouter);
 
     const usdcBal = await usdcContract.balanceOf(impersonatedSigner.address);

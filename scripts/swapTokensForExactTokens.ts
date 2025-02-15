@@ -24,11 +24,11 @@ const main = async () => {
 
     console.log('impersonneted acct dai bal before swap:', ethers.formatUnits(daiBal, 18))
 
-    let swapAmt = ethers.parseUnits('5000', 6);
-    let maxAmt = ethers.parseUnits('100000', 18);
+    let swapAmt = ethers.parseUnits('5000', 18);
+    let maxAmt = ethers.parseUnits('19000', 6);
     let deadline = await helpers.time.latest() + 500;
 
-    console.log('--------------- Approving swap amt ---------------')
+    console.log('--------------- Approving swap amount ---------------')
 
     await usdcContract.connect(impersonatedSigner).approve(UNIRouter, swapAmt);
 
