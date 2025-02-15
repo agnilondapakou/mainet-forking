@@ -24,9 +24,9 @@ const main = async () => {
 
     console.log('impersonneted acct dai bal before swap:', ethers.formatUnits(daiBal, 18))
 
-    let swapAmt = ethers.parseUnits('50000', 6);
-    let maxAmt = ethers.parseUnits('45000', 18);
-    let deadline = await helpers.time.latest() + 1500;
+    let swapAmt = ethers.parseUnits('5000', 6);
+    let maxAmt = ethers.parseUnits('100000', 18);
+    let deadline = await helpers.time.latest() + 500;
 
     console.log('--------------- Approving swap amt ---------------')
 
