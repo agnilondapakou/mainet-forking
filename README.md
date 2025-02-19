@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+npx hardhat node --fork https://eth-mainnet.g.alchemy.com/v2/hOFsEmyHlw0Ez4aLryoLetL-YwfWJC2D
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+npx hardhat compile
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+npx hardhat run ./scripts/<nom du fichier>
